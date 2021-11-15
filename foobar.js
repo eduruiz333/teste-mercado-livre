@@ -7,6 +7,10 @@
       agoravai = apiResp.results
       console.log(agoravai)
 
+      for (let i = 0; i <= 15; i++) {
+        console.log(agoravai[i].title)
+      }
+
 
       const items = 15,
         result = [],
@@ -16,13 +20,21 @@
 
       for (let i = 1; i <= items; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
-          result.push(foobar)
+          result.push(agoravai[i].title)
+          // result.push(foobar)
+          //Aplicar CSS AMARELO
         } else if (i % 5 === 0) {
-          result.push(bar)
+          result.push(agoravai[i].title)
+          // result.push(bar)
+          //Aplicar CSS VERMELHO
         } else if (i % 3 === 0) {
-          result.push(foo)
+          result.push(agoravai[i].title)
+          // result.push(foo)
+          //Aplicar CSS LARANJA
         } else {
-          result.push(i)
+          result.push(agoravai[i].title)
+          // result.push(i)
+          //Aplicar CSS CINZA
         }
       }
 
