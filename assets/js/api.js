@@ -18,6 +18,7 @@
                 resultArray.push(productTitle[i].title)
             }
 
+       
             //UTILIZA OS DADOS DO ARRAY PARA POPULAR A LISTA, IMPLEMENTANDO AS REGRAS DE CSS PARA MÚLTIPLOS DE 3, 5, 3 E 5
             for (let i = 1; i < resultArray.length; ++i) {
 
@@ -54,3 +55,7 @@
             }
         })
 })()
+
+localStorage.clear()
+localStorage.setItem('Autor', 'Eduardo Ruiz')
+console.log(localStorage)
