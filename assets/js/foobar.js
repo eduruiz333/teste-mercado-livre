@@ -28,3 +28,10 @@
   }
 
 })()
+
+localStorage.setItem('Autor', 'Eduardo Ruiz')
+
+const getCache = localStorage.getItem('Autor')
+const credits = document.querySelector('.credits')
+
+credits.innerHTML = getCache

@@ -56,6 +56,12 @@
         })
 })()
 
-localStorage.clear()
+
+
+// localStorage.clear()
 localStorage.setItem('Autor', 'Eduardo Ruiz')
-console.log(localStorage)
+
+const getCache = localStorage.getItem('Autor')
+const credits = document.querySelector('.credits')
+
+credits.innerHTML = getCache
