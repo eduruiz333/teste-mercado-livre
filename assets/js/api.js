@@ -1,5 +1,4 @@
 (() => {
-
     const URL = fetch('https://api.mercadolibre.com/sites/MLA/search?q=cards')
     URL
         .then(apiResp => apiResp.json())
@@ -17,11 +16,9 @@
             for (let i = 0; i <= items; i++) {
                 resultArray.push(productTitle[i].title)
             }
-
        
             //UTILIZA OS DADOS DO ARRAY PARA POPULAR A LISTA, IMPLEMENTANDO AS REGRAS DE CSS PARA MÚLTIPLOS DE 3, 5, 3 E 5
             for (let i = 1; i < resultArray.length; ++i) {
-
                 if (i % 3 === 0 && i % 5 === 0) {
                     listItem = document.createElement('li')
                     listItem.innerHTML = listData[i]
@@ -56,9 +53,6 @@
         })
 })()
 
-
-
-// localStorage.clear()
 localStorage.setItem('Autor', 'Eduardo Ruiz')
 
 const getCache = localStorage.getItem('Autor')
