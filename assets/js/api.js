@@ -42,16 +42,16 @@
             }
 
             // ADICIONA ESTILO PARA MARCAR ITEM SELECIONADO
-            const content = document.querySelector('.content');
-            const lista = content.getElementsByClassName('prod');
+            const content = document.querySelector('.content')
+            const lista = content.getElementsByClassName('prod')
             for (let i = 0; i < lista.length; i++) {
                 lista[i].addEventListener("click", function () {
-                    const current = document.getElementsByClassName("active");
+                    const current = document.getElementsByClassName("active")
                     if (current.length > 0) {
-                        current[0].className = current[0].className.replace(" active", "");
+                        current[0].className = current[0].className.replace(" active", "")
                     }
-                    this.className += " active";
-                });
+                    this.className += " active"
+                })
             }
         })
 })()
